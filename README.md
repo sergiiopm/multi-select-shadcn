@@ -1,4 +1,4 @@
-# MultiSelect Component - Shadcn Demo
+# Multi Select Component - shadcn/ui
 
 This is a multi-select component built with React and **shadcn/ui**. This is my first open-source project, and my goal is to continuously improve the components, making them as reusable as possible for a wide range of use cases, accessible to everyone.
 
