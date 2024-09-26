@@ -39,7 +39,11 @@ export default function Home() {
       <div className="pt-12">
         <p className="text-balance">
           In development. Your contributions are welcome on
-          <a href="" className="inline-block ml-2 relative top-0.5">
+          <a
+            href="https://github.com/sergiiopm/multi-select-shadcn"
+            target="_blank"
+            className="inline-block ml-2 relative top-0.5"
+          >
             <Github className="size-5" />
           </a>
         </p>
