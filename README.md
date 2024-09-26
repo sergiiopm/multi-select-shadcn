@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MultiSelect Component - Shadcn Demo
 
-## Getting Started
+This is a multi-select component built with React and **shadcn/ui**. This is my first open-source project, and my goal is to continuously improve the components, making them as reusable as possible for a wide range of use cases, accessible to everyone.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To get started, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/sergiiopm/multi-select-shadcn.git
+   cd multi-select-shadcn
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+This will start a local server, and you can view the project at `http://localhost:3000`.
+
+## Usage
+
+Once you have the project set up, you can import and use the `MultiSelect` or `MultiSelectDialog` component in your application:
+
+```jsx
+import MultiSelect from "./components/MultiSelect";
+
+const users = [
+  { name: "John Doe", email: "john@doe.com" },
+  { name: "Jane Doe", email: "jane@doe.com" },
+  // Add more users
+];
+
+function App() {
+  return (
+    <div>
+      <h1>Invite Friends</h1>
+
+      <MultiSelectDialog items={users}>Invite friends</MultiSelectDialog>
+
+      <MultiSelect items={users} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I welcome contributions to this project! If you'd like to contribute, please follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Fork** the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a **pull request**.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to open an issue if you encounter any bugs or have any suggestions for new features.
